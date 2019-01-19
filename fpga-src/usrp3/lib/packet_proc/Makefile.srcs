@@ -1,0 +1,26 @@
+#
+# Copyright 2013 Ettus Research LLC
+# Copyright 2016 Ettus Research, a National Instruments Company
+#
+# SPDX-License-Identifier: LGPL-3.0-or-later
+#
+
+##################################################
+# Packet Processing Sources
+##################################################
+PACKET_PROC_SRCS = $(abspath $(addprefix $(BASE_DIR)/../lib/packet_proc/, \
+chdr_eth_framer.v \
+cvita_chunker.v \
+cvita_dechunker.v \
+cvita_dest_lookup.v \
+cvita_insert_tlast.v \
+cvita_packet_debug.v \
+eth_dispatch.v \
+eth_interface.v \
+fix_short_packet.v \
+ip_hdr_checksum.v \
+source_flow_control.v \
+vita_eth_framer.v \
+arm_deframer.v \
+))
+
